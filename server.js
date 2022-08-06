@@ -122,7 +122,7 @@ const controller = async (req, res) => {
                 resultingRestaurant = restaurants[i]
             }
         }
-        res.status(200).json({ status: 200, data: resultingPolygon })
+        res.status(200).json({ status: 200, polygon: resultingPolygon, restaurant: resultingRestaurant })
     }
     catch (err) {
         res.status(204).json({ status: 204 })
